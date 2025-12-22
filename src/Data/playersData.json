@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Thian",
+        "horarioNormal": {
+            "lunes": {
+                "entrada": 13,
+                "salida": 14.5
+            },
+            "martes": {
+                "entrada": 9,
+                "salida": 14.5
+            }
+        },
+        "corte": {
+            "entrada": null,
+            "salida": null
+        },
+        "cambio": []
+    },
+    {
+        "id": 2,
+        "name": "Ari",
+        "horarioNormal": {
+            "lunes": {
+                "entrada": 9,
+                "salida": 14.5
+            },
+            "martes": {
+                "entrada": 9,
+                "salida": 14.5
+            }
+        },
+        "corte": {
+            "entrada": null,
+            "salida": null
+        },
+        "cambio": []
+    },
+    {
+        "id": 1,
+        "name": "Thian",
+        "horarioNormal": {
+            "lunes": {
+                "entrada": 13,
+                "salida": 20
+            },
+            "martes": {
+                "entrada": 14.5,
+                "salida": 20
+            }
+        },
+        "corte": {
+            "entrada": null,
+            "salida": null
+        },
+        "cambio": []
+    },
+    {
+        "id": 4,
+        "name": "Luz",
+        "horarioNormal": {
+            "lunes": {
+                "entrada": 14.5,
+                "salida": 20
+            },
+            "martes": {
+                "entrada": 13,
+                "salida": 20
+            }
+        },
+        "corte": {
+            "entrada": null,
+            "salida": null
+        },
+        "cambio": []
+    }
+]
