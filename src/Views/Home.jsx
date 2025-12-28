@@ -1,15 +1,14 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import logo from '../logo.svg';
-import { ApiPlayer } from '../Context/ApiContext';
+// import { ApiPlayer } from '../Context/ApiContext';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-    const { test } = useContext(ApiPlayer)
+    // const {  } = useContext(ApiPlayer)
 
-    useEffect(() => {
-        test('chancho!! esto anda!')
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+
 
     return (
         <div className="App">
@@ -26,6 +25,28 @@ const Home = () => {
                 >
                     Learn React
                 </a>
+
+                {/* {
+                    puntoPlayers.length !== 0 &&
+
+                    <ComponentTest byStoreArray={puntoPlayers} />
+
+                } */}
+
+                <Link to={"/punto"}>
+                    <Button variant="primary">Punto</Button>
+                </Link >
+
+                <Link to={"/ciudad"}>
+                    <Button variant="primary">Ciudad</Button>
+                </Link >
+
+                <Link to={"/espacio"}>
+                    <Button variant="primary">Espacio</Button>
+                </Link >
+
+
+
             </header>
         </div>
     )

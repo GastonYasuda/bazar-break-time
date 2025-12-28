@@ -1,78 +1,122 @@
 [
     {
         "id": 1,
-        "name": "Thian",
-        "horarioNormal": {
-            "lunes": {
-                "entrada": 13,
-                "salida": 14.5
-            },
-            "martes": {
-                "entrada": 9,
-                "salida": 14.5
-            }
-        },
-        "corte": {
-            "entrada": null,
-            "salida": null
-        },
-        "cambio": []
+        "name": "Ornella",
+        "store": "punto",
+        "entradaLaboral": 13,
+        "salidaLaboral": 14.5,
+        "tiempoCorte": 30
     },
     {
         "id": 2,
-        "name": "Ari",
-        "horarioNormal": {
-            "lunes": {
-                "entrada": 9,
-                "salida": 14.5
-            },
-            "martes": {
-                "entrada": 9,
-                "salida": 14.5
-            }
-        },
-        "corte": {
-            "entrada": null,
-            "salida": null
-        },
-        "cambio": []
+        "name": "Belen",
+        "store": "punto",
+        "entradaLaboral": 13,
+        "salidaLaboral": 14.5,
+        "tiempoCorte": 30
     },
     {
-        "id": 1,
-        "name": "Thian",
-        "horarioNormal": {
-            "lunes": {
-                "entrada": 13,
-                "salida": 20
-            },
-            "martes": {
-                "entrada": 14.5,
-                "salida": 20
-            }
-        },
-        "corte": {
-            "entrada": null,
-            "salida": null
-        },
-        "cambio": []
+        "id": 3,
+        "name": "Jen",
+        "store": "punto",
+        "entradaLaboral": 14.5,
+        "salidaLaboral": 20,
+        "tiempoCorte": 30
     },
     {
         "id": 4,
+        "name": "Anto2",
+        "store": "punto",
+        "entradaLaboral": 14.5,
+        "salidaLaboral": 20,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 5,
+        "name": "Thian",
+        "store": "ciudad",
+        "entradaLaboral": 9,
+        "salidaLaboral": 14.5,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 6,
+        "name": "Ariadna",
+        "store": "ciudad",
+        "entradaLaboral": 9,
+        "salidaLaboral": 14.5,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 7,
+        "name": "Vale",
+        "store": "ciudad",
+        "entradaLaboral": 14.5,
+        "salidaLaboral": 20,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 8,
         "name": "Luz",
-        "horarioNormal": {
-            "lunes": {
-                "entrada": 14.5,
-                "salida": 20
-            },
-            "martes": {
-                "entrada": 13,
-                "salida": 20
-            }
-        },
-        "corte": {
-            "entrada": null,
-            "salida": null
-        },
-        "cambio": []
+        "store": "ciudad",
+        "entradaLaboral": 14.5,
+        "salidaLaboral": 20,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 9,
+        "name": "Ryo",
+        "store": "espacio",
+        "entradaLaboral": 9,
+        "salidaLaboral": 17,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 10,
+        "name": "Mely",
+        "store": "espacio",
+        "entradaLaboral": 9,
+        "salidaLaboral": 14,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 11,
+        "name": "Luca",
+        "store": "espacio",
+        "entradaLaboral": 9,
+        "salidaLaboral": 16,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 12,
+        "name": "Oriana",
+        "store": "espacio",
+        "entradaLaboral": 9,
+        "salidaLaboral": 14.5,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 13,
+        "name": "Anto",
+        "store": "espacio",
+        "entradaLaboral": 9,
+        "salidaLaboral": 14.5,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 14,
+        "name": "Darien",
+        "store": "espacio",
+        "entradaLaboral": 14.5,
+        "salidaLaboral": 20,
+        "tiempoCorte": 30
+    },
+    {
+        "id": 14,
+        "name": "Darien",
+        "store": "espacio",
+        "entradaLaboral": 14.5,
+        "salidaLaboral": 20,
+        "tiempoCorte": 30
     }
 ]
