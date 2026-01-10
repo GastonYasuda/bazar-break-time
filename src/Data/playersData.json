@@ -68,7 +68,7 @@
         "name": "Ryo",
         "store": "espacio",
         "entradaLaboral": 9,
-        "salidaLaboral": 17,
+        "salidaLaboral": 20,
         "tiempoCorte": 30
     },
     {
@@ -112,8 +112,8 @@
         "tiempoCorte": 30
     },
     {
-        "id": 14,
-        "name": "Darien",
+        "id": 15,
+        "name": "Jorge",
         "store": "espacio",
         "entradaLaboral": 14.5,
         "salidaLaboral": 20,
