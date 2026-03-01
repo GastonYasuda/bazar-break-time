@@ -1,12 +1,8 @@
-import React from 'react';
 import logo from '../logo.svg';
-// import { ApiPlayer } from '../Context/ApiContext';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-
-    // const {  } = useContext(ApiPlayer)
 
 
 
@@ -26,13 +22,6 @@ const Home = () => {
                     Learn React
                 </a>
 
-                {/* {
-                    puntoPlayers.length !== 0 &&
-
-                    <ComponentTest byStoreArray={puntoPlayers} />
-
-                } */}
-
                 <Link to={"/punto"}>
                     <Button variant="primary">Punto</Button>
                 </Link >
@@ -44,8 +33,6 @@ const Home = () => {
                 <Link to={"/espacio"}>
                     <Button variant="primary">Espacio</Button>
                 </Link >
-
-
 
             </header>
         </div>

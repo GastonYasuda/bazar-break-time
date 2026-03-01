@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import playersData from '../Data/playersData.json'
 import { Button } from 'react-bootstrap'
 import CutComponent from './CutComponent/CutComponent'
 import { ApiPlayer } from '../Context/ApiContext'
@@ -9,35 +8,31 @@ import CutSchedule from './CutSchedule/CutSchedule'
 
 const ComponentTest = () => {
 
+    const { duracionTrabajo, duracionAlmuerzo, empleadosPorLocal, empleadoPorStore } = useContext(ApiPlayer)
     const { storeId } = useParams()
-    const [showStorePlayers, setShowStorePlayers] = useState()
-    const { duracionTrabajo, duracionAlmuerzo } = useContext(ApiPlayer)
+    const [colaAlmuerzo, setColaAlmuerzo] = useState([])
+
 
 
     useEffect(() => {
 
-        const storePlayers = playersData.filter(
-            player => player.store === storeId
-        );
-
-        setShowStorePlayers(storePlayers);
-
+        empleadosPorLocal(storeId)
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [storeId])
 
     return (
         <>
             <div>
-                {showStorePlayers && showStorePlayers.map((byStorePlayer, index) => (
+                {empleadoPorStore && empleadoPorStore.map((byStorePlayer, index) => (
                     <div key={index}>
                         <h1>{byStorePlayer.name}</h1>
                         <h6>Entrada: {byStorePlayer.entradaLaboral}</h6>
                         <h6>Salida: {byStorePlayer.salidaLaboral}</h6>
                         <h6>Horas de trabajo: {duracionTrabajo(byStorePlayer)}</h6>
 
-                        <CutComponent horasTrabajo={duracionAlmuerzo(duracionTrabajo(byStorePlayer))} />
+                        <CutComponent tiempoAlmuerzo={duracionAlmuerzo(duracionTrabajo(byStorePlayer))} />
 
-                        <CutSchedule byStorePlayer={byStorePlayer} cutTimeInput={'hola'} />
+                        <CutSchedule byStorePlayer={byStorePlayer} colaAlmuerzo={colaAlmuerzo} setColaAlmuerzo={setColaAlmuerzo} tiempoAlmuerzo={duracionAlmuerzo(duracionTrabajo(byStorePlayer))} />
                     </div>
                 ))}
             </div>
