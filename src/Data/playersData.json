@@ -39,7 +39,7 @@
         "name": "Ariadna",
         "store": "ciudad",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "14:30"
+        "salidaLaboral": "20:00"
     },
     {
         "id": 7,
@@ -67,14 +67,14 @@
         "name": "Mely",
         "store": "espacio",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "14:30"
+        "salidaLaboral": "20:00"
     },
     {
         "id": 11,
         "name": "Luca",
         "store": "espacio",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "16:00"
+        "salidaLaboral": "20:00"
     },
     {
         "id": 12,

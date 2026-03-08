@@ -3,36 +3,55 @@ import { Link, useParams } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import CutComponent from './CutComponent/CutComponent'
 import { ApiPlayer } from '../Context/ApiContext'
-import CutSchedule from './CutSchedule/CutSchedule'
+import CoverLunch from './CoverLunch/CoverLunch'
+
 
 
 const ComponentTest = () => {
 
-    const { duracionTrabajo, duracionAlmuerzo, empleadosPorLocal, empleadoPorStore } = useContext(ApiPlayer)
+    const { duracionTrabajo, empleadosPorLocal } = useContext(ApiPlayer)
+
     const { storeId } = useParams()
-    const [colaAlmuerzo, setColaAlmuerzo] = useState([])
+    const [empleadoDelStore, setEmpleadoDelStore] = useState()
+
 
 
 
     useEffect(() => {
 
-        empleadosPorLocal(storeId)
+        setEmpleadoDelStore(empleadosPorLocal(storeId))
+
+
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [storeId])
 
     return (
         <>
+
+            <Link to={'/'}>
+                <Button variant="dark">Home</Button>
+            </Link>
+
+
             <div>
-                {empleadoPorStore && empleadoPorStore.map((byStorePlayer, index) => (
+                <CoverLunch empleadoDelStore={empleadoDelStore} />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div>
+                {empleadoDelStore && empleadoDelStore.map((byStorePlayer, index) => (
                     <div key={index}>
                         <h1>{byStorePlayer.name}</h1>
                         <h6>Entrada: {byStorePlayer.entradaLaboral}</h6>
                         <h6>Salida: {byStorePlayer.salidaLaboral}</h6>
                         <h6>Horas de trabajo: {duracionTrabajo(byStorePlayer)}</h6>
 
-                        <CutComponent tiempoAlmuerzo={duracionAlmuerzo(duracionTrabajo(byStorePlayer))} />
+                        <CutComponent tiempoAlmuerzo={byStorePlayer.tiempoAlmuerzo} />
 
-                        <CutSchedule byStorePlayer={byStorePlayer} colaAlmuerzo={colaAlmuerzo} setColaAlmuerzo={setColaAlmuerzo} tiempoAlmuerzo={duracionAlmuerzo(duracionTrabajo(byStorePlayer))} />
+
                     </div>
                 ))}
             </div>
@@ -41,9 +60,6 @@ const ComponentTest = () => {
 
 
 
-            <Link to={'/'}>
-                <Button variant="dark">Home</Button>
-            </Link>
         </>
 
     )
