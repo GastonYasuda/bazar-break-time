@@ -15,18 +15,18 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
         if (personaQueCubre && entradaPersonaQueCubre && empleadoDelStore) {
             console.log('empleadoDelStore', empleadoDelStore);
 
-            console.log('turnoManana', turnoManana);
+            //  console.log('turnoManana', turnoManana);
 
 
 
-            console.log(`Los chicos cortan a partir de las ${entradaPersonaQueCubre}, y lo cubre ${personaQueCubre}`);
+            //  console.log(`Los chicos cortan a partir de las ${entradaPersonaQueCubre}, y lo cubre ${personaQueCubre}`);
 
 
         }
 
         if (ordenAlmuerzoArray.length !== 0) {
 
-            console.log('ordenAlmuerzoArray', ordenAlmuerzoArray);
+            //   console.log('ordenAlmuerzoArray', ordenAlmuerzoArray);
         }
 
 
@@ -55,14 +55,14 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
 
         let nuevoOrden = []
 
-        console.log('turnoManana', turnoManana);
+        // console.log('turnoManana', turnoManana);
 
 
         turnoManana.forEach((persona, index) => {
 
             if (index === 0) {
                 nuevoOrden.push({
-                    nombre: persona.name,
+                    nombre: persona.nombre,
                     entradaAlmuerzo: entradaPersonaQueCubre,
                     tiempoAlmuerzo: persona.tiempoAlmuerzo
                 })
@@ -70,7 +70,7 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
                 const personaAnterior = turnoManana[index - 1]
 
                 nuevoOrden.push({
-                    nombre: persona.name,
+                    nombre: persona.nombre,
                     entradaAlmuerzo: sumarMinutos(
                         nuevoOrden[index - 1].entradaAlmuerzo,
                         personaAnterior.tiempoAlmuerzo
@@ -84,10 +84,10 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
 
 
         const empleado = empleadoDelStore.find(
-            persona => persona.name === personaQueCubre
+            persona => persona.nombre === personaQueCubre
         );
 
-        console.log('nuevoOrden', nuevoOrden);
+        // console.log('nuevoOrden', nuevoOrden);
 
 
         nuevoOrden.splice(2, 0, {
@@ -115,24 +115,35 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
 
             {mostrarResultado &&
                 <>
-                    <h6>Los chicos cortan a partir de las {entradaPersonaQueCubre}, y lo cubre {personaQueCubre}</h6>
+                    <h6>Los chicos cortan a partir de las {entradaPersonaQueCubre}, y cubre {personaQueCubre}</h6>
                 </>
             }
+            <br />
 
-            {ordenAlmuerzoArray.map((persona, i) => {
-                return (
-                    <div key={i}>
-                        <h6>{persona.nombre}</h6>
-                        <>Corta a las {persona.entradaAlmuerzo}</>
-                        <p>Corta {persona.tiempoAlmuerzo} minutos</p>
-                    </div>)
-            })}
+            {
+                ordenAlmuerzoArray.map((persona, i) => {
+                    const trabajando = ordenAlmuerzoArray.filter(
+                        ordenAlmuerzoArray => ordenAlmuerzoArray.nombre !== persona.nombre
+                    )
+
+                    // const trabajando = ordenAlmuerzoArray.filter(
+                    //     p => p.nombre !== persona.nombre
+                    // )
+
+
+                    return (
+                        <div key={i}>
+                            <h6>{persona.nombre} {persona.entradaAlmuerzo} - ({trabajando.map(p => p.nombre).join(", ")})</h6>
+                            <p>Corta {persona.tiempoAlmuerzo} minutos</p>
+                        </div>)
+                })
+            }
 
 
 
 
 
-        </div>
+        </div >
     )
 }
 

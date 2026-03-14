@@ -44,7 +44,7 @@ const ComponentTest = () => {
             <div>
                 {empleadoDelStore && empleadoDelStore.map((byStorePlayer, index) => (
                     <div key={index}>
-                        <h1>{byStorePlayer.name}</h1>
+                        <h1>{byStorePlayer.nombre}</h1>
                         <h6>Entrada: {byStorePlayer.entradaLaboral}</h6>
                         <h6>Salida: {byStorePlayer.salidaLaboral}</h6>
                         <h6>Horas de trabajo: {duracionTrabajo(byStorePlayer)}</h6>

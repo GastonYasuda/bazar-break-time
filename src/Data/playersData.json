@@ -1,106 +1,106 @@
 [
     {
         "id": 1,
-        "name": "Ornella",
-        "store": "punto",
+        "nombre": "Ornella",
+        "local": "punto",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "18:30"
+        "salidaLaboral": "14:30"
     },
     {
         "id": 2,
-        "name": "Belen",
-        "store": "punto",
+        "nombre": "Belen",
+        "local": "punto",
         "entradaLaboral": "9:00",
         "salidaLaboral": "14:30"
     },
     {
         "id": 3,
-        "name": "Jen",
-        "store": "punto",
+        "nombre": "Jen",
+        "local": "punto",
         "entradaLaboral": "13:00",
         "salidaLaboral": "20:00"
     },
     {
         "id": 4,
-        "name": "Anto2",
-        "store": "punto",
+        "nombre": "Anto2",
+        "local": "punto",
         "entradaLaboral": "14:30",
         "salidaLaboral": "20:00"
     },
     {
         "id": 5,
-        "name": "Thian",
-        "store": "ciudad",
+        "nombre": "Thian",
+        "local": "ciudad",
         "entradaLaboral": "9:00",
         "salidaLaboral": "14:30"
     },
     {
         "id": 6,
-        "name": "Ariadna",
-        "store": "ciudad",
+        "nombre": "Ariadna",
+        "local": "ciudad",
         "entradaLaboral": "9:00",
         "salidaLaboral": "20:00"
     },
     {
         "id": 7,
-        "name": "Vale",
-        "store": "ciudad",
+        "nombre": "Vale",
+        "local": "ciudad",
         "entradaLaboral": "14:30",
         "salidaLaboral": "20:00"
     },
     {
         "id": 8,
-        "name": "Nao",
-        "store": "ciudad",
+        "nombre": "Nao",
+        "local": "ciudad",
         "entradaLaboral": "14:30",
         "salidaLaboral": "20:00"
     },
     {
         "id": 9,
-        "name": "Ryo",
-        "store": "espacio",
+        "nombre": "Ryo",
+        "local": "espacio",
         "entradaLaboral": "9:00",
         "salidaLaboral": "17:00"
     },
     {
         "id": 10,
-        "name": "Mely",
-        "store": "espacio",
+        "nombre": "Mely",
+        "local": "espacio",
         "entradaLaboral": "9:00",
         "salidaLaboral": "20:00"
     },
     {
         "id": 11,
-        "name": "Luca",
-        "store": "espacio",
+        "nombre": "Luca",
+        "local": "espacio",
         "entradaLaboral": "9:00",
         "salidaLaboral": "20:00"
     },
     {
         "id": 12,
-        "name": "Oriana",
-        "store": "espacio",
+        "nombre": "Oriana",
+        "local": "espacio",
         "entradaLaboral": "9:00",
         "salidaLaboral": "14:30"
     },
     {
         "id": 13,
-        "name": "Anto",
-        "store": "espacio",
+        "nombre": "Anto",
+        "local": "espacio",
         "entradaLaboral": "14:30",
         "salidaLaboral": "20:00"
     },
     {
         "id": 14,
-        "name": "Darien",
-        "store": "espacio",
+        "nombre": "Darien",
+        "local": "espacio",
         "entradaLaboral": "14:30",
         "salidaLaboral": "20:00"
     },
     {
         "id": 15,
-        "name": "Jorge",
-        "store": "espacio",
+        "nombre": "Jorge",
+        "local": "espacio",
         "entradaLaboral": "16:00",
         "salidaLaboral": "20:00"
     }

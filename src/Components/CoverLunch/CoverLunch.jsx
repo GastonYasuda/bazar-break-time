@@ -52,7 +52,7 @@ const CoverLunch = ({ empleadoDelStore }) => {
                 <option value="2">Two</option>
                 <option value="3">Three</option> */}
                 {turnoTarde.map(empleadoTarde => (
-                    <option value={empleadoTarde.name} key={empleadoTarde.id}>{empleadoTarde.name}</option>
+                    <option value={empleadoTarde.nombre} key={empleadoTarde.id}>{empleadoTarde.nombre}</option>
                 ))}
             </Form.Select>
 

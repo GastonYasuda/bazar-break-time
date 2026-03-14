@@ -44,7 +44,7 @@ const ApiContext = ({ children }) => {
 
 
     const empleadosPorLocal = (storeId) => {
-        return empleados.filter(player => player.store === storeId)
+        return empleados.filter(player => player.local === storeId)
     }
 
     const horaAMinutos = (hora) => {
