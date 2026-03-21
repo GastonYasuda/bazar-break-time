@@ -4,104 +4,111 @@
         "nombre": "Ornella",
         "local": "punto",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "14:30"
+        "salidaLaboral": "14:30",
+        "asiste": true
     },
     {
         "id": 2,
         "nombre": "Belen",
         "local": "punto",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "14:30"
+        "salidaLaboral": "14:30",
+        "asiste": true
     },
     {
         "id": 3,
         "nombre": "Jen",
         "local": "punto",
         "entradaLaboral": "13:00",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 4,
         "nombre": "Anto2",
         "local": "punto",
         "entradaLaboral": "14:30",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 5,
         "nombre": "Thian",
         "local": "ciudad",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "14:30"
+        "salidaLaboral": "14:30",
+        "asiste": true
     },
     {
         "id": 6,
         "nombre": "Ariadna",
         "local": "ciudad",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 7,
         "nombre": "Vale",
         "local": "ciudad",
         "entradaLaboral": "14:30",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 8,
         "nombre": "Nao",
         "local": "ciudad",
         "entradaLaboral": "14:30",
-        "salidaLaboral": "20:00"
-    },
-    {
-        "id": 9,
-        "nombre": "Ryo",
-        "local": "espacio",
-        "entradaLaboral": "9:00",
-        "salidaLaboral": "17:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 10,
         "nombre": "Mely",
         "local": "espacio",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 11,
         "nombre": "Luca",
         "local": "espacio",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 12,
         "nombre": "Oriana",
         "local": "espacio",
         "entradaLaboral": "9:00",
-        "salidaLaboral": "14:30"
+        "salidaLaboral": "14:30",
+        "asiste": true
     },
     {
         "id": 13,
         "nombre": "Anto",
         "local": "espacio",
-        "entradaLaboral": "14:30",
-        "salidaLaboral": "20:00"
+        "entradaLaboral": "13:00",
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 14,
         "nombre": "Darien",
         "local": "espacio",
         "entradaLaboral": "14:30",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     },
     {
         "id": 15,
         "nombre": "Jorge",
         "local": "espacio",
         "entradaLaboral": "16:00",
-        "salidaLaboral": "20:00"
+        "salidaLaboral": "20:00",
+        "asiste": true
     }
 ]

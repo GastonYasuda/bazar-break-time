@@ -23,9 +23,6 @@ const ApiContext = ({ children }) => {
     const agregarTiempoAlmuerzo = () => {
         const data = JSON.parse(localStorage.getItem("playersData")) || [];
 
-
-
-
         const nuevoArray = data.map(persona => ({
             ...persona,
             tiempoAlmuerzo: duracionAlmuerzo(duracionTrabajo(persona))
@@ -39,6 +36,8 @@ const ApiContext = ({ children }) => {
     useEffect(() => {
         localStorage.setItem("playersData", JSON.stringify(empleados))
         agregarTiempoAlmuerzo()
+
+
     }, [empleados])
 
 
@@ -93,8 +92,25 @@ const ApiContext = ({ children }) => {
 
     }
 
+
+    const actualizarPersona = (id, nuevosDatos) => {
+        setEmpleados((prev) => {
+            const actualizado = prev.map((emp) =>
+                emp.id === id
+                    ? { ...emp, ...nuevosDatos }
+                    : emp
+            );
+
+            localStorage.setItem("playersData", JSON.stringify(actualizado));
+
+            return actualizado;
+        });
+    };
+
+
+
     return (
-        <ApiPlayer.Provider value={{ test, horaAMinutos, horaPuntoAMinutos, duracionTrabajo, empleadosPorLocal, sumarMinutos }}>
+        <ApiPlayer.Provider value={{ test, horaAMinutos, horaPuntoAMinutos, duracionTrabajo, empleadosPorLocal, sumarMinutos, actualizarPersona }}>
             {children}
         </ApiPlayer.Provider>
     )

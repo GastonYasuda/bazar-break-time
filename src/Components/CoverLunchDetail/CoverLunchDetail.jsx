@@ -13,7 +13,7 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
 
     useEffect(() => {
         if (personaQueCubre && entradaPersonaQueCubre && empleadoDelStore) {
-            console.log('empleadoDelStore', empleadoDelStore);
+            // console.log('empleadoDelStore', empleadoDelStore);
 
             //  console.log('turnoManana', turnoManana);
 
@@ -26,26 +26,15 @@ const CoverLunchDetail = ({ empleadoDelStore, turnoManana, personaQueCubre, entr
 
         if (ordenAlmuerzoArray.length !== 0) {
 
-            //   console.log('ordenAlmuerzoArray', ordenAlmuerzoArray);
+            console.log('ordenAlmuerzoArray', ordenAlmuerzoArray);
         }
 
 
     }, [personaQueCubre, entradaPersonaQueCubre, empleadoDelStore, turnoManana, ordenAlmuerzoArray])
 
 
-    //funcion para que guarde en un array
-
-    // eslint-disable-next-line no-unused-vars
-    const asignarOrdenAlmuerzo = () => {
-
-        //quien tiene 60 min de almuerzo?
-        //  const primero = turnoManana.filter(persona => persona.tiempoAlmuerzo === 60)
-
-        // console.log('primero', primero);
 
 
-
-    }
 
 
     const botonResultado = () => {
